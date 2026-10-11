@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8">
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f7f6f2,#16181d);--card:light-dark(#fff,#20232a);--fg:light-dark(#1d2129,#e6e8ec);
+--mut:light-dark(#6b7280,#8b93a1);--bd:light-dark(#dedbd0,#2d323b);--acc:light-dark(#1f6f5c,#4cc2a4);--bad:light-dark(#b3392b,#ef7b6c)}
+*{box-sizing:border-box}body{width:300px;margin:0;padding:14px;background:var(--bg);color:var(--fg);font:13px/1.4 system-ui,sans-serif}
+h1{font-size:15px;margin:0}#site{margin:2px 0 10px;color:var(--mut);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut);margin:12px 0 6px}
+button{display:block;width:100%;margin-bottom:6px;padding:8px 10px;text-align:left;font:inherit;color:inherit;background:var(--card);
+border:1px solid var(--bd);border-radius:6px;cursor:pointer}button:hover:not(:disabled){border-color:var(--acc)}
+button:focus-visible{outline:2px solid var(--acc);outline-offset:1px}button:disabled{opacity:.5;cursor:default}
+button.danger{color:var(--bad)}button.danger:hover:not(:disabled){border-color:var(--bad)}button[data-armed]{background:var(--bad);color:#fff;border-color:var(--bad)}
+label{display:flex;gap:6px;align-items:center;color:var(--mut);font-size:12px}#msg{min-height:18px;margin:10px 0 0}#msg.bad{color:var(--bad)}
+</style>
+<h1>Site Data Tools</h1><div id="site"></div>
+<h2>Export</h2>
+<button id="lsx"></button><button id="ckx"></button><button id="hid"></button>
+<label><input type="checkbox" id="vo"> Hidden inputs: values only</label>
+<h2>Wipe</h2>
+<button id="ckw" class="danger"></button><button id="lsw" class="danger"></button>
+<div id="msg" role="status"></div>
+<script src="popup.js"></script>
