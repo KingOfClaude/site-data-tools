@@ -1,6 +1,6 @@
 # Site Data Tools
 
-A small Chrome extension (Manifest V3) that gives you one-click export or wipe of the current site's cookies and `localStorage`, plus extraction of hidden form inputs.
+A small Chrome extension (Manifest V3) that gives you one-click export or wipe of the current site's cookies and `localStorage`, plus extraction of hidden form inputs. Mainly used to help create web scrapers
 
 ## Features
 
